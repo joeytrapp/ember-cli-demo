@@ -1,0 +1,8 @@
+<div {{bind-attr class="isFluid:container-fluid:container"}}>
+  <div class="navbar-header">
+    {{#link-to 'index' class='navbar-brand'}}
+      {{name}}
+    {{/link-to}}
+  </div>
+  {{yield}}
+</div>

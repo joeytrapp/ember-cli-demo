@@ -1,0 +1,20 @@
+<div {{action show}}>
+  {{#if hasSelectedValue}}
+    {{displayValue}}
+  {{else}}
+    {{prompt}}
+  {{/if}}
+</div>
+
+{{#if isShowing}}
+  <div class="search-select-list">
+    {{input type='text' value=searchText}}
+    <ul class="search-select-matches">
+      {{#each item in filteredItems}}
+        <li {{action selectItem item}}>{{item.label}}</li>
+      {{else}}
+        <li>No matches</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}

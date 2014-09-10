@@ -1,10 +1,12 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-<nav>
-  {{link-to 'Index' 'index'}} |
-  {{#link-to 'about'}}About{{/link-to}} |
-  {{link-to 'Users' 'users'}} |
-  {{link-to 'Projects' 'projects'}} |
-</nav>
+{{#ls-app-nav name='Loadsys App' isFluid=true}}
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li>{{link-to 'Index' 'index'}}</li>
+      <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      <li>{{link-to 'Users' 'users'}}</li>
+      <li>{{link-to 'Projects' 'projects'}}</li>
+    </ul>
+  </div>
+{{/ls-app-nav}}
 
 {{outlet}}

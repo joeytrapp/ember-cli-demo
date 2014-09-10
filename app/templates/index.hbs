@@ -1,1 +1,9 @@
 <h3>This is the index template</h3>
+
+<p>Date: {{ls-date date=today}}</p>
+
+<p>{{ls-confirm-button value="To save or not to save" action="saveTheThing"}}</p>
+
+<div>
+  {{ls-search-select content=selectItems selection=selectedItem prompt="Hey, search"}}
+</div>
