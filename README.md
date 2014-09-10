@@ -2,6 +2,13 @@
 
 This README outlines the details of collaborating on this Ember application.
 
+## Requirements
+
+* Install node. (Example: `sudo port install nodejs`)
+* Install npm. (Example: `sudo port install npm`)
+* Install bower: `sudo npm install -g bower`
+* Install ember-cli: `sudo npm install -g ember-cli`
+
 ## Installation
 
 * `git clone` this repository
