@@ -5,4 +5,10 @@
   {{link-to 'Create Project' 'projects.create'}}
 </nav>
 
+<ul>
+  {{#each}}
+    <li>{{link-to name 'project' this}}</li>
+  {{/each}}
+</ul>
+
 {{outlet}}
