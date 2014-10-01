@@ -16,7 +16,7 @@ module.exports = function(app) {
     var project = PROJECTS.filter(function(p) {
       return +p.id === +req.params.id;
     })[0];
-    res.send({ project: project });
+    res.send({ projects: [project] });
   });
 
   app.use('/api/projects', projectsRouter);

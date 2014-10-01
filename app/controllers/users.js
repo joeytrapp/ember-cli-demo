@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.ArrayController.extend({
   actions: {
     allTheAlerts: function() {
-      alert('app/route/user.js');
+      alert('app/controllers/users.js');
       return true;
     }
   }
