@@ -15,13 +15,12 @@
   </head>
   <body>
     <script>
-      window.EmberSeminarENV = {{ENV}};
-      window.EmberENV = window.EmberSeminarENV.EmberENV;
+      window.EmberENV = {{EMBER_ENV}};
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-seminar.js"></script>
     <script>
-      window.EmberSeminar = require('ember-seminar/app')['default'].create(EmberSeminarENV.APP);
+      window.EmberSeminar = require('ember-seminar/app')['default'].create({{APP_CONFIG}});
     </script>
   </body>
 </html>
